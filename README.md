@@ -12,8 +12,8 @@ This is the code repository of Arboreus, a Nordic forest simulator for rigorous 
 A benchmark dataset with 50 worlds of size $1000m^2$ from Nordic test areas is released with this code repository. This dataset is available at the branch *benchmark* and each world can be individually downloaded or directly pulled with Git LFS.
 
 ```
-git checkout benchmark
-git lfs pull --include "benchmark/00/arboreus.obj"
+git checkout -b benchmark
+git lfs pull --include "benchmark/00/00.obj"
 ```
 
 ## Citation

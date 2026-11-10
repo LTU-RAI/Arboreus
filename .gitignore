@@ -6,8 +6,6 @@ __pycache__/
 *.urdf
 *.xyz
 *.ply
-*.obj
-*.mtl
 
 # C extensions
 *.so

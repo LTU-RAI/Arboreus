@@ -9,12 +9,9 @@ This is the code repository of Arboreus, a Nordic forest simulator for rigorous 
 
 ## Benchmark Dataset
 
-A benchmark dataset with 50 worlds of size $1000m^2$ from Nordic test areas is released with this code repository. This dataset is available at the branch *benchmark* and each world can be individually downloaded or directly pulled with Git LFS.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24246185.svg)](https://doi.org/10.5281/zenodo.24246185)
 
-```
-git checkout -b benchmark
-git lfs pull --include "benchmark/00/00.obj"
-```
+A benchmark dataset with 25 worlds of size $1000m^2$ from the Jämtön, Mjölkuddsberget and Storforsen Nordic test areas is released with this code repository. This dataset is available at [Zenodo](https://doi.org/10.5281/zenodo.24246185). A visual render map for each environment is included at the branch *benchmark*.
 
 ## Citation
 

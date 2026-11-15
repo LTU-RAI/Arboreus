@@ -5,6 +5,8 @@
   <img src="imgs/figure2.jpg" style="width:100%; height:auto;"/>
 </p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24254915.svg)](https://doi.org/10.5281/zenodo.24254915)
+
 This is the code repository of Arboreus, a Nordic forest simulator for rigorous statistical validation of robotic autonomy algorithms in Nordic forest environments. Arboreus presents an automated methodology for rapid synthesis of large-scale forest environments from parametric trees, height-variant terrains and satellite-informed tree density distributions.
 
 ## Benchmark Dataset

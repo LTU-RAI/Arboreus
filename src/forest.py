@@ -25,13 +25,13 @@ session.headers.update({ "Accept": "application/json", })
 
 def sample_random_tree_model(dominant_leaf_type=None, rng=None):
     if dominant_leaf_type is None:
-        species = rng.choice(("pine", "birch", "spruce"), p=(0.55, 0.30, 0.15))
+        species = rng.choice(("pine", "birch", "spruce"), p=(config["TREE_PROB_PINE"], config["TREE_PROB_BIRCH"], config["TREE_PROB_SPRUCE"]))
     else:
         if dominant_leaf_type == 1:  species = "birch"
-        else:                        species = "spruce" if random.random() <= 0.3 else "pine"
+        else:                        species = "spruce" if random.random() <= config["TREE_PROB_SPRUCE"] else "pine"
 
     if species == "spruce":
-        scale = config["TREE_SCALE"] / 2
+        scale = config["TREE_SCALE_SPRUCE"]
         params = {
             "height_range": [12.1, 28.6], "diam_range": [0.13, 0.37],
             "num_branches": [160, 200], "min_can_height": [0.1, 0.1],
@@ -40,7 +40,7 @@ def sample_random_tree_model(dominant_leaf_type=None, rng=None):
         }
 
     elif species == "pine":
-        scale = config["TREE_SCALE"]
+        scale = config["TREE_SCALE_PINE"]
         params = {
             "height_range": [11.8, 30.8], "diam_range": [0.14, 0.43],
             "num_branches": [80, 120], "min_can_height": [0.03, 0.03],
@@ -49,7 +49,7 @@ def sample_random_tree_model(dominant_leaf_type=None, rng=None):
         }
 
     else:
-        scale = config["TREE_SCALE"]
+        scale = config["TREE_SCALE_BIRCH"]
         params = {
             "height_range": [14.5, 28.7], "diam_range": [0.12, 0.36],
             "num_branches": [250, 350], "min_can_height": [0.007, 0.007],
@@ -92,8 +92,7 @@ def generate_base_forest():
         ground_points, xs, ys = generate_base_ground(side, side, spacing=config["GROUND_SPACING_M"], seed=variant_seed)
         export_xyz_ply(os.path.join(variant_dir, "ground.ply"), ground_points)
 
-        # Homogeneous Poisson point process: Poisson count, then uniform independent XY samples over the same area.
-        tree_count = int(rng.poisson(config["FOREST_DENSITY"] * config["FOREST_SIZE_M2"]))
+        tree_count = np.random.binomial(n=int(config["FOREST_DENSITY"] * config["FOREST_SIZE_M2"]), p=rng.uniform(0.0, 1.0))
         print(f"rdx {rdx:02d}: {tree_count} trees; ground has {len(ground_points)} points")
 
         z_grid = ground_points[:, 2].reshape(len(ys), len(xs))

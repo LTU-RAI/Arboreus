@@ -6,11 +6,18 @@ FOREST_DENSITY: 0.2     # Trees per m² (Base Generation)
 FOREST_SIZE_M2: 1000.0  # Forest Size in m²
 
 TREE_POINTS: 4096       # Points in Generated Point Clouds
-TREE_SCALE: 0.5         # Heuristic Forest Age
 TREES_DIR: "data"       # Output Directory
 
 TREE_URDF_RADIUS: 0.01  # URDF Base Radius
 TREE_URDF_SCALE: 0.001  # URDF Element Scale
+
+TREE_SCALE_PINE: 0.25    # Heuristic Forest Age
+TREE_SCALE_BIRCH: 0.35   # Heuristic Forest Age
+TREE_SCALE_SPRUCE: 0.35  # Heuristic Forest Age
+
+TREE_PROB_PINE: 0.3     # Pine Spawn Probability
+TREE_PROB_BIRCH: 0.0    # Birch Spawn Probability (Base Generation)
+TREE_PROB_SPRUCE: 0.7   # Srpuce Spawn Probability
 
 ###
 

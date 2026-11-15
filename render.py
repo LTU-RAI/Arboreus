@@ -58,8 +58,8 @@ def shift_meshes_to_bbox_center(objects, extra_xy=(-50.0, -50.0)):
 if __name__ == "__main__":
     bpy.ops.wm.read_homefile(use_empty=True)
 
-    for rdx in range(50):
-        input_obj = os.path.join(f"{rdx:02d}", f"{rdx:02d}.obj")
+    for rdx in range(2):
+        input_obj = os.path.join(f"{rdx:02d}", f"arboreus.obj")
         if not os.path.exists(input_obj):
             print(f"Skipping missing file: {input_obj}")
             continue
@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
         shift_meshes_to_bbox_center(imported_objects)
 
-        output_path = os.path.join(f"{rdx:02d}", f"{rdx:02d}.png")
+        output_path = os.path.join(f"{rdx:02d}", f"arboreus.png")
             
         scene = bpy.context.scene
         if scene.world is None:

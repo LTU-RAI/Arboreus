@@ -35,7 +35,7 @@ The surface generation is guided by topographic data from the Swedish cadastral 
 
 The current implementation includes as well forest generation without satellite data for ease-of-use outside of Sweden.
 
-![](imgs/figure3.jpg)
+![](imgs/figure3.png)
 
 ### Installation
 

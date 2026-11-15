@@ -185,7 +185,7 @@ if __name__ == "__main__":
             print(f"No meshes found for {rdx_dir}")
             continue
 
-        output_path = os.path.join(out_dir, f"{rdx:02d}.obj")
+        output_path = os.path.join(out_dir, "arboreus.obj")
         print(f"Exporting combined mesh to: {output_path}")
 
         valid_objects = [obj for obj in batch_objects if obj and obj.name in bpy.data.objects]

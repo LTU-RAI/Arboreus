@@ -94,7 +94,7 @@ The user-controllability enables tuning the environments for data collection app
 
 ### Forest Parameterization
 
-The parameterization of the forest generation is shown below. The forest type allows generation with or without satellite information. The forest variants indicate the number of environments to generate. The forest size and density define the bounds and tree distribution of the environment.
+The parameterization of the forest generation is shown below. The forest type allows generation with or without satellite information. The forest variants indicate the number of environments to generate. The forest size and density define the bounds and tree distribution of the environment. The tree scale allows generation of different forest ages while the tree probability provides the spawn distribution of each tree type.
 
 ```
 SEED: 123               # Random Seed
@@ -110,6 +110,14 @@ TREES_DIR: "data"       # Output Directory
 
 TREE_URDF_RADIUS: 0.01  # URDF Base Radius
 TREE_URDF_SCALE: 0.001  # URDF Element Scale
+
+TREE_SCALE_PINE: 0.25    # Heuristic Pine Age
+TREE_SCALE_BIRCH: 0.35   # Heuristic Birch Age
+TREE_SCALE_SPRUCE: 0.35  # Heuristic Spruce Age
+
+TREE_PROB_PINE: 0.3     # Pine Spawn Probability
+TREE_PROB_BIRCH: 0.0    # Birch Spawn Probability (Base Generation)
+TREE_PROB_SPRUCE: 0.7   # Srpuce Spawn Probability
 ```
 
 ### Satellite Parameterization

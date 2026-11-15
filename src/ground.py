@@ -167,7 +167,7 @@ def generate_base_ground(width, height, spacing=0.5, seed=None):
                 row1 = min(row0 + patch_rows, len(ys))
                 col1 = min(col0 + patch_cols, len(xs))
 
-                if rng.random() >= config["GROUND_FILTER_PROBABILITY"]:
+                if rng.random() <= config["GROUND_FILTER_PROBABILITY"]:
                     continue
 
                 patch_x = xx[row0:row1, col0:col1]

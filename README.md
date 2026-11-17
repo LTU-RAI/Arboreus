@@ -7,7 +7,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24254915.svg)](https://doi.org/10.5281/zenodo.24254915)
 
-This is the code repository of Arboreus, a Nordic forest simulator for rigorous statistical validation of robotic autonomy algorithms in Nordic forest environments. Arboreus presents an automated methodology for rapid synthesis of large-scale forest environments from parametric trees, height-variant terrains and satellite-informed tree density distributions.
+This is the code repository of Arboreus, a Boreal forest simulator for rigorous statistical validation of robotic autonomy algorithms in Boreal forest environments. Arboreus presents an automated methodology for rapid synthesis of large-scale forest environments from parametric trees, height-variant terrains and satellite-informed tree density distributions.
 
 ## Benchmark Dataset
 
@@ -26,12 +26,12 @@ If you use Arboreus in your work consider including the citation of this publica
 ## Presentation Video
 
 <p align="center">
-  <a href="https://youtu.be/MxL3YVanRlg"><img width="844" height="470" alt="image" src="https://github.com/user-attachments/assets/c315c8f8-3446-4091-872f-20b69d9c1cdb" /></a>
+  <a href="https://youtu.be/KW1gCwXezII"><img width="844" height="470" alt="image" src="https://github.com/user-attachments/assets/c315c8f8-3446-4091-872f-20b69d9c1cdb" /></a>
 </p>
 
 ## Forest Generation
 
-The parametric generation of dominant Nordic tree species such as Birch, Spruce and Pine is guided by trunk, canopy and foliage parameters, extracted from growth studies in the Nordic areas. Tree distribution in an area of interest is based on the Copernicus satellite dataset, which provides tree cover and type densities up to 10m raster resolution. 
+The parametric generation of dominant Boreal tree species such as Birch, Spruce and Pine is guided by trunk, canopy and foliage parameters, extracted from growth studies in the Nordic areas. Tree distribution in an area of interest is based on the Copernicus satellite dataset, which provides tree cover and type densities up to 10m raster resolution. 
 
 The surface generation is guided by topographic data from the Swedish cadastral agency to produce realistic terrains. Given coordinates and extents of forested areas of interest, Arboreus rapidly synthesizes topography and satellite-informed likely replicas and their statistical variants, while offering user-controllability over the quality and dimensionality of trees (age-based).
 

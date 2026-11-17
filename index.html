@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Arboreus: a realistic Nordic forest simulator with topographic terrain and satellite-informed parametric tree distributions.">
+  <meta name="description" content="Arboreus: a realistic Boreal forest simulator with topographic terrain and satellite-informed parametric tree distributions.">
   <title>Arboreus</title>
   <style>
     :root {
@@ -105,15 +105,15 @@
     </div>
 
     <div class="teaser">
-      <img src="imgs/figure1.png" alt="Arboreus Nordic forest simulation overview" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+      <img src="imgs/figure1.png" alt="Arboreus Boreal forest simulation overview" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
     </div>
-    <p class="authors">Fernando Labra Caso, Akshit Saradagi, George Nikolakopoulos</p>
+    <p class="authors">Fernando Labra Caso, Akshit Saradagi, Anton Koval, George Nikolakopoulos</p>
     <p class="affiliation">Robotics and AI, Luleå University of Technology</p>
     <nav class="links" aria-label="Project links">
       <a href="https://github.com/LTU-RAI/Arboreus">GitHub</a>
       <a href="https://doi.org/10.5281/zenodo.24254914">Software</a>
       <a href="https://doi.org/10.5281/zenodo.24246185">Dataset</a>
-      <a href="https://youtu.be/MxL3YVanRlg">Video</a>
+      <a href="https://youtu.be/KW1gCwXezII">Video</a>
       <a href="#citation">BibTeX</a>
     </nav>
   </header>
@@ -121,12 +121,12 @@
   <main class="page">
     <section id="abstract">
       <h2>Abstract</h2>
-      <p>This work presents Arboreus, a Nordic forest simulator for rigorous statistical validation of robotic autonomy algorithms in Nordic forest environments. Arboreus presents an automated methodology for rapid synthesis of large-scale forest environments from parametric trees, height-variant terrains and satellite-informed tree density distributions. The parametric generation of dominant Nordic tree species such as Birch, Spruce and Pine is guided by trunk, canopy and foliage parameters, extracted from growth studies in the Nordic areas. Tree distribution in an area of interest is based on the Copernicus satellite dataset, which provides tree cover and type densities up to 10 m raster resolution. The surface generation is guided by topographic data from the Swedish cadastral agency to produce realistic terrains. Given coordinates and extents of forested areas of interest, Arboreus rapidly synthesizes topography and satellite-informed likely replicas and their statistical variants, while offering user-controllability over the quality and dimensionality of trees (age-based). The user-controllability enables tuning the environments for data collection applications or customization before testing of feature-sensitive autonomy algorithms. Arboreus has been open-sourced to provide accessibility, along with a dataset comprising 25 forest worlds of size 1000 m² from a Nordic test area.</p>
+      <p>This work presents Arboreus, a realistic Boreal forest simulator, developed to support statistical validation of robotic autonomy algorithms in Boreal forest environments. Arboreus presents an automated methodology for synthesizing large-scale, data-informed, plausible forest worlds from parametric trees, height-variant terrain, and satellite-informed tree density distributions. The parametric generation of dominant Boreal tree species such as Birch, Spruce, and Pine is guided by trunk, canopy, and foliage parameters, extracted from growth studies in the Nordic areas. Tree distribution in an area of interest is guided by the Copernicus satellite dataset, which provides tree cover density and dominant species type at up to 10 meter raster resolution. The forest floor generation is guided by topographic data from the Swedish cadastral agency to produce realistic data-informed terrains. Given coordinates and extents of forested areas of interest, Arboreus synthesizes  data-informed plausible forests, while offering flexibility to inject user observations of real forests (detail, age, dimensionality and tree count), which is critical for realistic synthetic data generation and for the testing of feature-sensitive autonomy algorithms.</p>
     </section>
 
     <section id="overview">
       <h2>Overview</h2>
-      <p>Arboreus is a Nordic forest simulator for rigorous statistical validation of robotic autonomy algorithms. It automatically synthesizes large-scale forest environments from parametric trees, height-variant terrain, and satellite-informed tree-density distributions. Birch, Spruce, and Pine models can be combined with terrain data and tree-cover information. Forest generation is also available without satellite data.</p>
+      <p>Arboreus is a Boreal forest simulator for rigorous statistical validation of robotic autonomy algorithms. It automatically synthesizes large-scale forest environments from parametric trees, height-variant terrain, and satellite-informed tree-density distributions. Birch, Spruce, and Pine models can be combined with terrain data and tree-cover information. Forest generation is also available without satellite data.</p>
       <p><a href="https://doi.org/10.5281/zenodo.24254914">Download the software from Zenodo</a></p>
       <figure>
         <img src="imgs/figure3.png" alt="Arboreus forest generation visualization" onerror="this.hidden=true; this.nextElementSibling.hidden=false">

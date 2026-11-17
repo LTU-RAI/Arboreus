@@ -26,7 +26,7 @@ If you use Arboreus in your work consider including the citation of this publica
 ## Presentation Video
 
 <p align="center">
-  <a href="https://youtu.be/KW1gCwXezII"><img width="844" height="470" alt="image" src="https://github.com/user-attachments/assets/c315c8f8-3446-4091-872f-20b69d9c1cdb" /></a>
+  <a href="https://youtu.be/KW1gCwXezII"><img width="844" height="470" alt="image" src="https://github.com/user-attachments/assets/8e733fc1-bbe9-4955-ad6b-55c449521a4a" /></a>
 </p>
 
 ## Forest Generation

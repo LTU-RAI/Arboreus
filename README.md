@@ -47,11 +47,13 @@ The current implementation includes as well forest generation without satellite 
 
 ![](imgs/figure3.png)
 
-### Installation
+### Installation (Python 3.10)
 
 The repository can be installed as a standalone Python package.
 
 ```
+sudo apt install libxml2-dev libxslt1-dev python3-dev build-essential
+
 python3 -m pip install -e .
 pip install bpy==4.0.0 --extra-index-url https://download.blender.org/pypi/
 ```

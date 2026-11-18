@@ -20,7 +20,15 @@ A benchmark dataset with 25 worlds of size $1000m^2$ from the Jämtön, Mjölkud
 If you use Arboreus in your work consider including the citation of this publication.
 
 ```
---- Under Review ---
+@misc{caso2026arboreusrealisticborealforest,
+      title={Arboreus: A Realistic Boreal Forest Simulator with Topographic Terrain and Satellite-Informed Parametric Tree Distributions},
+      author={F. Labra Caso and A. Saradagi and A. Koval and G. Nikolakopoulos},
+      year={2026},
+      eprint={2611.22908},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2611.22908},
+}
 ```
 
 ## Presentation Video

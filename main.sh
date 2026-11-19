@@ -17,10 +17,10 @@ python3 src/generator/val/adtree.py
 ## https://urdf-viewer-pi.vercel.app/
 
 # Build URDF skeletons
-# python3 src/generator.train/skeleton.py
+# python3 src/generator/train/skeleton.py
 
 # Join URDF trees
-# python3 src/generator.train/merge.py
+# python3 src/generator/train/merge.py
 
 # Import estimated tree meshes
 python3 src/generator/val/blender.py

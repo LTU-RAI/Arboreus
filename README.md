@@ -60,9 +60,26 @@ pip install bpy==4.0.0 --extra-index-url https://download.blender.org/pypi/
 
 ### Deployment
 
-The forest generation can be deployed through the bash script _main.sh_; where the tree skeleton, the topographic-based ground and the forest mesh are created. An extract of the script is shown below.
+In order to deploy the tree mesh reconstruction tool [AdTree](https://github.com/tudelft3d/AdTree), it is necessary to build both pine and spruce-birch versions. Two modeling versions are used to control the trunk fitting process over the generated tree point clouds.
 
 ```
+cd src/adtree/pine && mkdir Release && cd Release
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+
+cd src/adtree/spruce-birch && mkdir Release && cd Release
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+```
+
+The forest generation can be deployed through the bash script _main.sh_; where the tree skeleton, the topographic-based ground and the forest mesh are created. An extract of the script is shown below.
+```
+bash main.sh
+```
+
+```
+## main.sh
+
 # Generate synthetic forest with tree trunks
 python3 src/forest.py
 
@@ -79,25 +96,14 @@ python3 src/generator/val/adtree.py
 python3 src/generator/val/blender.py
 ```
 
-In order to deploy the tree mesh reconstruction tool [AdTree](https://github.com/tudelft3d/AdTree), it is necessary to build both pine and spruce-birch versions. Two modeling versions are used to control the trunk fitting process over the generated tree point clouds.
-
-```
-cd src/adtree/pine && mkdir Release && cd Release
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
-
-cd src/adtree/spruce-birch && mkdir Release && cd Release
-...
-```
-
 The Arboreus tool also includes a URDF translator that generates tree and forest URDFs, instead of OBJ meshes. The current deployment script comments these steps.
 
 ```
 # Build URDF skeletons
-python3 src/generator.train/skeleton.py
+python3 src/generator/train/skeleton.py
 
 # Join URDF trees
-python3 src/generator.train/merge.py
+python3 src/generator/train/merge.py
 ```
 
 ## User Configuration
